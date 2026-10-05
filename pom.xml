@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+      Proyecto didáctico Semana 7 - PBY2203.
+
+      Se usa un proyecto Maven multi-módulo para que cada microservicio sea una aplicación
+      independiente, pero todos compartan la misma versión de Java, Spring Boot y las clases
+      que representan los eventos de dominio.
+    -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.5.7</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>cl.duoc.pby2203</groupId>
+    <artifactId>week7-kafka-study</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <name>Week 8 Kafka (sumativa3)</name>
+    <description>Formativa con Kafka</description>
+
+    <modules>
+        <module>config-server</module>
+        <module>discovery-server</module>
+        <module>auth-server</module>
+        <module>shared-events</module>
+        <module>transaccion-service</module>
+    </modules>
+
+    <properties>
+        <java.version>17</java.version>
+        <resilience4j.version>2.4.0</resilience4j.version>
+        <spring-cloud.version>2025.0.0</spring-cloud.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>

@@ -1,0 +1,47 @@
+http://localhost:8080/api/transacciones:
+
+{
+    "fecha": "04-10-2026",
+    "monto": 50000,
+    "tipo": "TRANSFERENCIA"
+}
+
+obtuve:
+
+{
+    "status": "PENDING",
+    "transaccionId": "3d007ef9-5112-4b96-8672-199ee098980a"
+}
+
+-------------------------------------------------
+
+{
+    "fecha": "04-10-2026",
+    "monto": 75000,
+    "tipo": "TRANSFERENCIA"
+}
+
+obtuve:
+
+{
+    "status": "PENDING",
+    "transaccionId": "f661876f-eefc-4536-9a59-e434b890de66"
+}
+
+
+----------------------------------------------------
+
+
+{
+    "fecha": "04-10-2026",
+    "monto": 100000,
+    "tipo": "TRANSFERENCIA"
+}
+
+obtuve:
+
+{
+    "status": "PENDING",
+    "transaccionId": "cbbde6b7-2a9e-4d33-811a-23cf29926c56"
+}
+

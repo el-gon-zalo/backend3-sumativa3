@@ -1,0 +1,10 @@
+POST http://localhost:9000/oauth2/token Authorization: Basic Auth Username: demo-client Password: demo-secret Body: grant_type=client_credentials
+
+Entrega:
+
+
+{
+    "access_token": "eyJraWQiOiIwZDFiMjAxZi05Y2U4LTRjMTYtYmZiZi0yY2M5NDcyNDk1OTMiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJkZW1vLWNsaWVudCIsImF1ZCI6ImRlbW8tY2xpZW50IiwibmJmIjoxNzkxMjMwMjYxLCJpc3MiOiJodHRwOi8vYXV0aC1zZXJ2ZXI6OTAwMCIsImV4cCI6MTc5MTIzMjA2MSwiaWF0IjoxNzkxMjMwMjYxLCJqdGkiOiJkZDAyZmY5Yy0xZjI5LTRkOWMtODUyMy0wM2E4NmQ1OGI4NDIifQ.qfIZ-6lRbKrAXp_G3Jlz-OAGQLieccGonNKewAwslYp_AGohLT_rBj9Ku_GhJyQdlfDF7t6JKsFckpi_rEu8TjhsaTu9pwyS75CL0jp1LiB0-Dl_DWuyjEP8ElRv_Z1a_xLkUNfxIURrV5NdBbYMN6XzWHU0K0IPY2DibxcxlPrrGBnQRGLR38yphhWWYNNo66hBBE6A0y0RYrfLm3epe7ClnT2vkJAZjDrqIGJEIH-tfBwHM-F-fO_oymlPtdhiLLjExFM52VdgpQLoZx2qjcqiZhwcEEHSHZKeXyLTAGRB_vDHis4QsdSN_STPvJ1gHPOO58blaow0-GwGc5VVBw",
+    "token_type": "Bearer",
+    "expires_in": 1799
+}
